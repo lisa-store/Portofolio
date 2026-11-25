@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0c18">
+  <meta name="description" content="Website personal portfolio: profil, kemampuan, pendidikan, pengalaman, dan karya.">
+  <title>Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a href="#konten" class="skip-link">Lewati ke konten utama</a>
+  <div class="page-glow glow-1" aria-hidden="true"></div>
+  <div class="page-glow glow-2" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a class="brand" href="#beranda" aria-label="Kembali ke beranda"><span class="brand-mark">AP<span>.</span></span><span>Portfolio<span class="accent">.</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#beranda" class="active">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#pendidikan">Pendidikan</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#proyek">Proyek</a>
+        <a class="nav-contact" href="#kontak">Kontak <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="konten">
+    <section class="hero container" id="beranda" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-pulse" aria-hidden="true"></span> PERSONAL PORTFOLIO</div>
+        <p class="hello">Halo, perkenalkan saya</p>
+        <h1 id="hero-title"><span id="heroName">Allyssa Putri</span><span class="title-dot">.</span></h1>
+        <p class="role"><span class="role-line" aria-hidden="true"></span><span id="heroRole">Mahasiswa S1 Informatika</span></p>
+        <p class="hero-description" id="heroIntro">Saya tertarik pada teknologi dan ingin terus berkembang melalui pengalaman serta proyek yang bermanfaat.</p>
+        <div class="hero-actions">
+          <a href="#proyek" class="btn btn-primary">Lihat Portofolio <span aria-hidden="true">↗</span></a>
+          <a href="#kontak" class="btn btn-outline">Hubungi Saya <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="mini-meta"><span><span class="meta-icon">⌁</span> <span id="heroLocation">Kota, Indonesia</span></span><span class="meta-divider"></span><span>Terbuka untuk kolaborasi</span></div>
+      </div>
+      <div class="hero-art reveal" aria-label="Ilustrasi profil">
+        <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="floating-chip chip-top" aria-hidden="true"><span class="chip-symbol">✳</span> Desain Grafis </div>
+        <div class="portrait-frame">
+          <div class="portrait-grid" aria-hidden="true"></div>
+          <img id="profilePhoto" alt="Foto profil" hidden>
+          <div class="portrait-initials" id="profileInitials">NK</div>
+          <span class="portrait-label">Allyssa Putri</span>
+        </div>
+        <div class="floating-chip chip-bottom" aria-hidden="true"><span class="chip-symbol">✦</span> Web Development</div>
+        <span class="art-star star-a" aria-hidden="true">✳</span><span class="art-star star-b" aria-hidden="true">✦</span>
+      </div>
+      <a class="scroll-indicator" href="#tentang"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee-inner">DESIGN <span>✳</span> DEVELOP <span>✳</span> LEARN <span>✳</span> CREATE <span>✳</span> GROW <span>✳</span> DESIGN <span>✳</span> DEVELOP <span>✳</span> LEARN <span>✳</span> CREATE <span>✳</span> GROW <span>✳</span></div></div>
+
+    <section class="section container" id="tentang" aria-labelledby="about-title">
+      <div class="section-label reveal"><span>01 / ABOUT ME</span><span class="line"></span></div>
+      <div class="about-layout">
+        <div class="reveal"><h2 class="section-title" id="about-title">Sedikit tentang <em>saya.</em></h2><div class="about-badge">THINK · BUILD · IMPROVE <span>↗</span></div></div>
+        <div class="about-content reveal"><p class="lead" id="aboutHeadline">Membangun ide menjadi pengalaman digital yang bermakna.</p><p id="aboutDescription">Ceritakan profil, minat, dan tujuan karier kamu di bagian ini.</p><a id="cvButton" class="text-link" href="#kontak">Download CV <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="keahlian" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-label reveal"><span>02 / MY EXPERTISE</span><span class="line"></span></div>
+        <div class="section-heading reveal"><h2 class="section-title" id="skills-title">Keahlian & <em>kemampuan.</em></h2><p>Kombinasi keterampilan teknis dan nonteknis yang terus saya kembangkan.</p></div>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section container" id="pendidikan" aria-labelledby="education-title">
+      <div class="section-label reveal"><span>03 / EDUCATION</span><span class="line"></span></div>
+      <div class="section-heading reveal"><h2 class="section-title" id="education-title">Perjalanan <em>pendidikan.</em></h2><p>Tempat saya membangun pengetahuan dan membentuk cara berpikir.</p></div>
+      <div class="timeline" id="educationTimeline"></div>
+    </section>
+
+    <section class="section section-tinted" id="pengalaman" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-label reveal"><span>04 / EXPERIENCE</span><span class="line"></span></div>
+        <div class="section-heading reveal"><h2 class="section-title" id="experience-title">Pengalaman & <em>kontribusi.</em></h2><p>Belajar lewat organisasi, kolaborasi, dan berbagai tantangan nyata.</p></div>
+        <div class="timeline" id="experienceTimeline"></div>
+      </div>
+    </section>
+
+    <section class="section container" id="proyek" aria-labelledby="projects-title">
+      <div class="section-label reveal"><span>05 / SELECTED WORK</span><span class="line"></span></div>
+      <div class="section-heading reveal"><h2 class="section-title" id="projects-title">Karya & <em>proyek.</em></h2><p>Kumpulan karya yang mewakili proses belajar dan eksplorasi saya.</p></div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+    <section class="section contact-section" id="kontak" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div class="reveal"><div class="section-label"><span>06 / GET IN TOUCH</span><span class="line"></span></div><h2 class="contact-title" id="contact-title">Punya ide?<br><em>Mari terhubung.</em></h2><p>Terima kasih telah mengunjungi portofolio saya. Silakan hubungi saya untuk berdiskusi atau berkolaborasi.</p><a class="btn btn-primary" id="emailButton" href="mailto:">Kirim Email <span>↗</span></a></div>
+        <div class="contact-card reveal"><p class="contact-card-heading">LET'S CONNECT</p><div class="contact-info"><span>EMAIL</span><strong id="contactEmail">Tambahkan alamat email</strong></div><div class="contact-info"><span>LOKASI</span><strong id="contactLocation">Kota, Indonesia</strong></div><div class="social-links" id="socialLinks"></div><div class="card-bottom">THANKS FOR VISITING <span>✳</span></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="#beranda">Portfolio<span>.</span></a><p>© <span id="currentYear"></span> <span id="footerName">Allyssa Putri</span></p><a href="#beranda" class="back-top" aria-label="Kembali ke atas">↑</a></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

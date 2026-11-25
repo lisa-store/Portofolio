@@ -1,0 +1,5 @@
+Masukkan file foto dan CV kamu di folder ini.
+Contoh:
+- foto-profil.jpg
+- CV.pdf
+Kemudian buka data.js dan isi nama file sesuai petunjuk.
